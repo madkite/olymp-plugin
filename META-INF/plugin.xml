@@ -1,0 +1,16 @@
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
+<idea-plugin version="2">
+	<depends>com.intellij.modules.java</depends>
+	<name>Olymp Plugin</name>
+	<description>Generates Main class without dependencies.
+		This plugin is intended to be used at online contests (competitive programming). It does only one simple thing - add button to IDEA's toolbar that can generate Main.java in default package using your solution (it integrates all dependencies and eliminates some unused code).
+	</description>
+	<version>1.2</version>
+	<vendor email="madkite@gmail.com" url="http://llinux.net">Kosenko Roman</vendor>
+	<idea-version since-build="11169"/>
+	<actions>
+		<action id="Olymp.GenerateMain" class="net.llinux.idea.GenerateMainAction" text="Generate Main" icon="/images/wand--arrow.png">
+			<add-to-group group-id="MainToolBar" anchor="last"/>
+		</action>
+	</actions>
+</idea-plugin>
